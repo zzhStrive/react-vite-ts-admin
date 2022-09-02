@@ -1,0 +1,58 @@
+.app {
+  font-size: 1.6rem;
+  @media screen and (max-width: 960px) {
+    font-size: 1.4rem;
+  }
+  .aside {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    .logo {
+      height: 3rem;
+      margin: 1rem;
+      box-sizing: border-box;
+      border-radius: 1rem;
+      padding: 0 1rem;
+      text-align: center;
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid #c9c9ca;
+
+    background-color: #fff;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    .right {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .content {
+    margin-top: 10px;
+    padding: 0px 18px;
+    width: auto !important;
+    // max-height: calc(100vh - 104px) !important;
+    // overflow: hidden;
+    position: relative;
+  }
+
+  .footer {
+    text-align: center;
+
+    height: 20px;
+    padding: 0;
+    margin: 5px 0;
+  }
+}

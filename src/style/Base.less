@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  line-height: 1;
+  font: 16px/1.6 Helvetica Neue, Helvetica, PingFang SC, Microsoft YaHei, Tahoma,
+    Arial, sans-serif;
+  font-size: 10px;
+  background: #fff;
+  color: #000000;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.v-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.v-body {
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  height: 100%;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    background-color: rgba(240, 240, 240, 0);
+  }
+}
+
+.nodata {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.v-flex {
+  display: flex;
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.jsb {
+    justify-content: space-between;
+  }
+
+  &.jsc {
+    justify-content: center;
+  }
+
+  &.aic {
+    align-items: center;
+  }
+
+  .content {
+    flex: 1;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
